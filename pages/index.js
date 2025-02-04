@@ -168,19 +168,19 @@ export default function Home() {
                   <tbody>
                     <tr>
                       <td>Healthy Eating</td>
-                      <td>{blogsData.filter(dat => dat.blogcategory[0] === "Next Js").length}</td>
+                      <td>{blogsData.filter(dat => dat.blogcategory[0] === "Healthy Eating").length}</td>
                     </tr>
                     <tr>
                       <td>Weight Management</td>
-                      <td>{blogsData.filter(dat => dat.blogcategory[0] === "Css").length}</td>
+                      <td>{blogsData.filter(dat => dat.blogcategory[0] === "Weight Management").length}</td>
                     </tr>
                     <tr>
                       <td>Sports Nutrition</td>
-                      <td>{blogsData.filter(dat => dat.blogcategory[0] === "Node js").length}</td>
+                      <td>{blogsData.filter(dat => dat.blogcategory[0] === "Sports Nutrition").length}</td>
                     </tr>
                     <tr>
                       <td>Superfoods</td>
-                      <td>{blogsData.filter(dat => dat.blogcategory[0] === "Flutter Dev").length}</td>
+                      <td>{blogsData.filter(dat => dat.blogcategory[0] === "Superfoods").length}</td>
                     </tr>
                   </tbody>
                 </table>

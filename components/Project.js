@@ -170,12 +170,12 @@ export default function Project(
                 <label htmlFor="catergory">Select Category </label>
                 <select onChange={(e) => setProjectcategory(Array.from(e.target.selectedOptions, option => option.value))} name="catergory" id="catergory" multiple value={projectcategory} >
                     <option value="">Select Category</option>
-                    <option value="Website Development">Meal Planning</option>
-                    <option value="App Development">Weight Management</option>
-                    <option value="Design System">Sports Nutrition</option>
-                    <option value="Website Migration">Dietary Counseling</option>
-                    <option value="E-commerce site">Heart Health</option>
-                    <option value="Perfomance Evaluation">Diabetes Care</option>
+                    <option value="Meal Planning">Meal Planning</option>
+                    <option value="Weight Management">Weight Management</option>
+                    <option value="Sports Nutrition">Sports Nutrition</option>
+                    <option value="Dietary Counseling">Dietary Counseling</option>
+                    <option value="Heart Health">Heart Health</option>
+                    <option value="Diabetes Care">Diabetes Care</option>
                 </select>
                 <p className="existingcategory flex gap-1 mt-1 mb-1">Selected: {Array.isArray(existingProjectcategory) && existingProjectcategory.map(category => (
                     <span key={category}>{category}</span>
@@ -251,13 +251,13 @@ export default function Project(
             <div className='w-100 flex flex-col flex-left mb-2' data-aos="fade-up">
                 <label htmlFor="tags">Tags (ctrl + leftclick for multiple select)</label>
                 <select onChange={(e) => setTags(Array.from(e.target.selectedOptions, option => option.value))} name="tags" id="tags" multiple value={tags}>
-                    <option value="React">Meal Planning</option>
-                    <option value="Css">Weight Management</option>
-                    <option value="Javascript">Sports Nutrition</option>
-                    <option value="Next js">Dietary Counseling</option>
-                    <option value="React js">Heart Health</option>
-                    <option value="Database">Diabetes Care</option>
-                    <option value="Node js">Balanced Nutrition</option>
+                    <option value="Meal Planning">Meal Planning</option>
+                    <option value="Weight Management">Weight Management</option>
+                    <option value="JSports Nutrition">Sports Nutrition</option>
+                    <option value="Dietary Counseling">Dietary Counseling</option>
+                    <option value="Heart Health">Heart Health</option>
+                    <option value="Diabetes Care">Diabetes Care</option>
+                    <option value="Balanced Nutrition">Balanced Nutrition</option>
                 </select>
                 <p className="existingcategory flex gap-1 mt-1 mb-1">Selected: {existingTags && existingTags.length > 0 && (
                     <span>{existingTags.join(', ')}</span>

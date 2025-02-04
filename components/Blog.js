@@ -213,12 +213,12 @@ export default function Blog(
             <div className='w-100 flex flex-col flex-left mb-2' data-aos="fade-up">
                 <label htmlFor="tags">Tags (ctrl + leftclick for multiple select)</label>
                 <select onChange={(e) => setTags(Array.from(e.target.selectedOptions, option => option.value))} name="tags" id="tags" multiple value={tags}>
-                    <option value="html">Balanced Diet</option>
-                    <option value="css">Weight Loss</option>
-                    <option value="javascript">Muscle Gain</option>
-                    <option value="nextjs">Vegan</option>
-                    <option value="reactjs">Keto</option>
-                    <option value="database">Low-Carb</option>
+                    <option value="Balanced Diet">Balanced Diet</option>
+                    <option value="Weight Loss">Weight Loss</option>
+                    <option value="Muscle Gain">Muscle Gain</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Keto">Keto</option>
+                    <option value="Low-Carb">Low-Carb</option>
                 </select>
                 <p className="existingcategory flex gap-1 mt-1 mb-1">Selected: {existingTags && existingTags.length > 0 && (
                     <span>{existingTags.join(', ')}</span>
